@@ -1,16 +1,8 @@
-// app/layout.tsx
-import './globals.css'
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Sonic AI',
-  description: 'Ask questions to Gemini',
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Page() {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <main className="p-4">
+      <h1 className="text-2xl font-bold">Welcome to Sonic AI</h1>
+      <p className="text-gray-600">Ask your questions below...</p>
+    </main>
   )
 }
